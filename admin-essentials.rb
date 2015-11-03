@@ -43,6 +43,7 @@ def setup_git
 end
 
 def setup_etckeeper
+  directory '/etc/etckeeper'
   file '/etc/etckeeper/etckeeper.conf',
        mode: '444',
        content: <<EOF
