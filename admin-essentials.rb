@@ -59,6 +59,7 @@ def setup_zsh
   user 'root', shell: '/bin/zsh'
   sudo_user = ENV['SUDO_USER']
   user sudo_user, shell: '/bin/zsh' if sudo_user
+  file "~#{sudo_user}/.zshrc", owner: sudo_user
 end
 
 setup_git
