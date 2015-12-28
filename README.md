@@ -20,6 +20,7 @@ EOF
 sudo apt-get update && sudo apt-get -y install wright
 
 # install admin-essentials
+sudo apt-get -y install git
 git clone https://github.com/sometimesfood/wright-admin-essentials
 cd wright-admin-essentials
 sudo ./admin-essentials.rb
